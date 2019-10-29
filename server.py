@@ -1,6 +1,6 @@
 import socket
 import threading
-
+import sys
 
 ip_addr = "0.0.0.0"
 port = 8800
@@ -8,7 +8,7 @@ port = 8800
 #setup, 32 bit ipv4, TCP/IP
 serversocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 serversocket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR,1)
-server_	running = True
+server_running = True
 #give socket ip address and port
 socket_details = (ip_addr, port)
 serversocket.bind(socket_details)
